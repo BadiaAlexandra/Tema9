@@ -1,5 +1,8 @@
 package ro.digitalnation.basic;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Trainer extends Persoana {
 
 	public Trainer(String nume, String prenume, String oras, Integer varsta, boolean casatorita) {

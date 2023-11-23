@@ -1,11 +1,21 @@
 package ro.digitalnation.basic;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public abstract class Persoana {
 
 	//proprietatile clasei
 	private String nume, prenume, oras;
 	private Integer varsta;
 	private boolean casatorita;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 	
 	//constructor cu toti parametrii
 	public Persoana(String nume, String prenume, String oras, Integer varsta, boolean casatorita) {

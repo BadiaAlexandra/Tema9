@@ -1,6 +1,8 @@
 package ro.digitalnation.activitati;
 
+import javax.persistence.Entity;
 
+@Entity
 public class Tema implements Activitate {
 
 	@Override

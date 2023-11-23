@@ -3,10 +3,20 @@ package ro.digitalnation.activitati;
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
 import ro.digitalnation.basic.Persoana;
 import ro.digitalnation.basic.Trainer;
 
+@Entity
 public class Curs implements Activitate {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
 
 	private String nume, dificultate;
 	private Persoana trainer;

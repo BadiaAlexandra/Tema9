@@ -1,5 +1,8 @@
 package ro.digitalnation.basic;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Explorer extends Persoana {
 	public Explorer(String nume, String prenume, String oras, Integer varsta, boolean casatorita) {
 		super(nume, prenume, oras, varsta, casatorita);

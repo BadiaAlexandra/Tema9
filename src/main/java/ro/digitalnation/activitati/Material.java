@@ -1,5 +1,8 @@
 package ro.digitalnation.activitati;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Material implements Activitate {
 
 	@Override
